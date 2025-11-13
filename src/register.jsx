@@ -16,7 +16,7 @@ function Register() {
     try {
       const user = await createUserWithEmailAndPassword(auth, email.trim(), password);
       console.log("Registered:", user);
-      setMessage("Success! You can now log in.");
+      setMessage("Амжилттай Бүртгэгдлээ!");
     } catch (err) {
       console.error("Error:", err.code, err.message);
       setMessage(`Error: ${err.message}`);
